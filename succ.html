@@ -1,0 +1,235 @@
+<html>
+<head>
+<title>Payment Method</title>
+<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: poppins, sans-serif;
+}
+.remind-box {
+	width: 600px;
+	height: 250px;
+	margin: 40px auto auto auto;
+	padding: 20px;
+	border: 1px solid #000;
+	border-radius: 5px;
+}
+.step-header h3 {
+	margin-top: 50px;
+	text-align: center;
+}
+img {
+	width: 300px;
+	height: 400px;
+	margin-left: 20px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+}
+.img-box {
+	width: 100%;
+	padding: 10px;
+	display: grid;
+}
+.img-box .step1, .img-box .step2 {
+	margin: 20px auto auto auto;
+}
+.outlets {
+	width: 100%;
+}
+.outlets .outlet-head h3 {
+	text-align: center;
+}
+.outlet-img .img {
+	margin-left: 15%;
+}
+.img img{
+	width: 80%;
+	height: 500px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+	border-radius: 10px;
+}
+.note-box {
+	width: 80%;
+	height: 100px;
+	padding: 10px;
+	border: 1px solid #000;
+	margin: 40px auto auto auto;
+}
+.center {
+    position: absolute;
+    top: 290%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.popup {
+    width: 400px;
+    height: 300px;
+    padding: 30px 20px;
+    background: #f5f5f5;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.25);;
+    border-radius: 10px;
+    box-sizing: border-box;
+    z-index: 2;
+    text-align: center;
+    opacity: 1;
+    top: -200%;
+    transform: translate(-50%, -50%) scale(0.05);
+    transition: opacity 300ms ease-in-out,
+                top 1000ms ease-in-out,
+                transform 1000ms ease-in-out;
+}
+
+
+.popup.active {
+    opacity: 1;
+    top: 290%;
+    transform: translate(-50%,-50%) scale(1);
+    transition: transform 300ms cubic-bezier(0.18,0.89,0.43,1.19);
+}
+.popup .icon {
+    margin: 5px 0px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #34f234;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+}
+.popup .icon .la-check {
+    font-size: 30px;
+    color: #34f234;
+	line-height: 60px;
+}
+.popup .title {
+    margin: 5px 0px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.popup .description {
+    color: #222;
+    font-size: 15px;
+    padding: 5px;
+}
+.popup .dimiss-btn {
+    margin-top: 10px;
+}
+.popup .dismiss-btn button {
+    margin-left: -10px;
+    padding: 10px 10px;
+    background: #111;
+    color: #f5f5f5;
+    border: 2px solid #111;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 300ms ease-in-out;
+}
+.popup .dismiss-btn button:hover {
+    color: #111;
+    background: #f5f5f5;
+}
+.open-popup-btn {
+	margin-top: 10px;
+	margin-left: 45%;
+	margin-bottom: 20px;
+}
+.open-popup-btn button {
+	width: 150px;
+	height: 50px;
+	font-weight: 600;
+	font-size: 16px;
+	color: #f5f5f5;
+	background-color: rgb(42, 108, 230) ;
+	border-radius: 10px;
+	border: 2px solid rgb(42, 108, 230);
+}
+</style>
+<body>
+	<div class="remind-box">
+		<h3>Reminder:</h3>
+		<p>
+			You need to secure your reservation seat by paying your full amount.
+	      After you paid your reservation seat within 24hrs you will receive a SMS 
+	      Notification of your E-ticket and receipt with confirmation that we 
+	      received your payment.
+			<br><br><br>
+	      However, if you failed to pay your reservation within the given time(24hrs)
+	      your reservation for your seat/s will automatically deleted to our system.
+		</p>
+	</div>
+	<div class="step-header">
+		<h3>
+			How to pay your transaction via GCash App.<br>
+			Here’s the 5 steps on how to pay your transaction via GCash App.
+		</h3>
+	</div>
+	<div class="img-box">
+		<div class="step1">
+			<img src='Payment/step 1.png'>
+			<img src="step 2.png">
+			<img src="step 3.png">
+		</div>
+		<div class="step2">
+			<img src="step 4.png">
+			<img src="step 5.png">		
+		</div>
+	</div>
+	<div class="outlets">
+		<div class="outlet-head">
+			<h3>Here is the Lists Of GCash Partners Outlets. </h3>
+		</div>
+		<div class="outlet-img">
+			<div class="img">
+				<img src="othermethod.png">
+			</div>
+		</div>
+		<div class="note-box">
+			<h3>Note:</h3> 
+			<p>We will send you a message about our GCash account and number where you will send 
+			your payment for your transaction.
+			<a href="user.php">Go back to previous page</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="popup center">
+        <div class="icon">
+            <span class="las la-check"></span>
+        </div>
+        <div class="title">
+            Success!!
+        </div>
+        <div class="description">
+            You have successfully reserved a seat. Please follow the
+			 steps provided to pay your Transaction and Get your receipt. Thank you!!
+        </div>
+        <div class="dismiss-btn">
+            <a href="succ.html">
+                <button id="dismiss-popup-btn">
+                    OK!!
+                </button>
+            </a>
+        </div>
+    </div>
+	<div class="open-popup-btn">
+		<button id="open">Finish</button>
+	</div>
+    <script>
+        document.getElementById("open").addEventListener("click",function(){
+            document.getElementsByClassName("popup")[0].classList.add("active");
+        });
+
+		document.getElementById("dismiss-popup-btn").addEventListener("click",function(){
+            document.getElementsByClassName("popup")[0].classList.remove("active");
+        });
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fares and Schedules</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    .container {
+        position: relative;
+        width: 100%;
+        align-items: center;
+        margin: 20px auto;
+    }
+    .heading {
+        margin: 30px;
+    }
+    .heading h1 {
+        font-size: 50px;
+    }
+    .heading h3 {
+        color: darkslategray;
+    }
+    table {
+        border-collapse: collapse;
+        margin: 10px auto;
+        padding: 5px;
+        border: 1px solid #111;
+    }
+    table th {
+        background: #ff3527;
+        color: #fff;
+        padding: 15px;
+        border: 1px solid #111;
+    }
+    table td {
+       text-align: center;
+       padding: 10px;
+        border: 1px solid #111;
+    }
+    btn-box {
+        margin: 10px;
+        padding: 10px 0px;
+    }
+    .btn-box .btn {
+        width: 150px;
+        height: 40px;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 5px;
+        cursor: pointer;
+        outline: none;
+        color: #ff3527;
+        border: 2px solid #ff3527;
+        border-radius: 20px;
+    }
+    .btn-box .btn:hover {
+        background: #ff3527;
+        color: #fff;
+    }
+</style>
+<body>
+    <center>
+    <div class="container">
+        <div class="btn-box">
+            <a href="user.php">
+                <button class="btn">BACK</button>
+            </a>
+        </div>
+        <div class="content">
+            <div class="heading">
+                <h1><i>Schedule</i></h1>
+                <h3>Be guided accordingly with our bus schedule below.</h3>
+            </div>
+            <div class="schedule-box">
+                <table>
+                    <tr>
+                        <th>Bamban to Tarlac City</th>
+                        <th>Tarlac City to Bamban</th>
+                        <th>Moncada to Tarlac City</th>
+                        <th>Tarlac City to Moncada</th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>
+                                6:00am<br>
+                                7:00am<br>
+                                8:00am<br>
+                                9:00am<br>
+                                10:00am<br>
+                                11:00am<br>
+                                12:00am<br>
+                                1:00pm<br>
+                                2:00pm<br>
+                                3:00pm<br>
+                                4:00pm<br>
+                                5:00pm<br>
+                                6:00pm
+                            </td>
+
+                            <td>
+                                7:00am<br>
+                                8:00am<br>
+                                9:00am<br>
+                                10:00am<br>
+                                11:00am<br>
+                                12:00am<br>
+                                1:00pm<br>
+                                2:00pm<br>
+                                3:00pm<br>
+                                4:00pm<br>
+                                5:00pm<br>
+                                6:00pm<br>
+                                7:00pm
+                            </td>
+
+                            <td>
+                                6:00am<br>
+                                7:00am<br>
+                                8:00am<br>
+                                9:00am<br>
+                                10:00am<br>
+                                11:00am<br>
+                                12:00am<br>
+                                1:00pm<br>
+                                2:00pm<br>
+                                3:00pm<br>
+                                4:00pm<br>
+                                5:00pm<br>
+                                6:00pm<br>
+                                7:00pm
+                            </td>
+
+                            <td>
+                                7:00am<br>
+                                8:00am<br>
+                                9:00am<br>
+                                10:00am<br>
+                                11:00am<br>
+                                12:00am<br>
+                                1:00pm<br>
+                                2:00pm<br>
+                                3:00pm<br>
+                                4:00pm<br>
+                                5:00pm<br>
+                                6:00pm<br>
+                                7:00pm<br>
+                                8:00pm
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="fare-box">
+                <div class="heading">
+                    <h1><i>Fare</i></h1>
+                    <h3>Be guided accordingly with our bus fare below.</h3>
+                </div>
+                <table>
+                    <tr>
+                        <th colspan="2">OSBRS Fare</th>
+                    </tr>
+                    <tr>
+                        <td>Moncada to Waltermart, Paniqui</td>
+                        <td>P20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Moncada to Gerona</td>
+                        <td>P35.00</td>
+                    </tr>
+                    <tr>
+                        <td>Moncada to Salapungan</td>
+                        <td>P40.00</td>
+                    </tr>
+                    <tr>
+                        <td>Moncada to Osias</td>
+                        <td>P45.00</td>
+                    </tr>
+                    <tr>
+                        <td>Moncada to Siesta</td>
+                        <td>P45.00</td>
+                    </tr>
+                    <tr>
+                        <td>Moncada to SM Tarlac</td>
+                        <td>P45.00</td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <th colspan="2">OSBRS Fare</th>
+                    </tr>
+                    <tr>
+                        <td>Waltermart, Paniqui to Gerona</td>
+                        <td>P20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Waltermart, Paniqui to Salapungan</td>
+                        <td>P35.00</td>
+                    </tr>
+                    <tr>
+                        <td>Waltermart, Paniqui to Osias</td>
+                        <td>P35.00</td>
+                    </tr>
+                    <tr>
+                        <td>Waltermart, Paniqui to Siesta</td>
+                        <td>P35.00</td>
+                    </tr>
+                    <tr>
+                        <td>Waltermart, Paniqui to SM Tarlac</td>
+                        <td>P35.00</td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <th colspan="2">OSBRS Fare</th>
+                    </tr>
+                    <tr>
+                        <td>Gerona to Salapungan</td>
+                        <td>P20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Gerona to Osias</td>
+                        <td>P20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Gerona to Siesta</td>
+                        <td>P20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Gerona to SM Tarlac</td>
+                        <td>P20.00</td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <th colspan="2">OSBRS Fare</th>
+                    </tr>
+                    <tr>
+                        <td>Salapungan to Osias</td>
+                        <td>P15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Salapungan to Siesta</td>
+                        <td>P15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Salapungan to SM Tarlac</td>
+                        <td>P15.00</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</center>
+</body>
+</html>
